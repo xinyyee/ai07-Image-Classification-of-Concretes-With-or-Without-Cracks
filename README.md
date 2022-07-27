@@ -1,7 +1,7 @@
 # ai07 Image Classification of Concretes With or Without Cracks using Convolutional Neural Network
  
 ## 1. Objective
-The objective is to construct a convolutional neural network that able to classify the images dataset of concretes with or without the crack.Dataset is divided into two category such as negative(with crack) and positive(without crack).Besides, each category will provide 20000 images.
+The objective is to construct a convolutional neural network that able to classify the images dataset of concretes with or without the crack.Dataset is divided into two category such as negative(without crack) and positive(with crack).Besides,each category will provide 20000 images.
 
 [Concrete dataset](https://data.mendeley.com/datasets/5y9wdsg2zt/2)
 
@@ -16,9 +16,9 @@ Data annotation of concrete dataset was loaded.Firstly, data was split into trai
 
 
 # 3.2 Model
-Pre-trained model of feature extractor MobileNet V3 smaLl was chosen in this project due to small architecture to train the huge dataset.
+Pre-trained model of feature extractor MobileNet V3 small was chosen in this project due to the huge dataset provided.Hence small architecture of MobileNet was selected.
 
-The rules of image shape in MobileNet V3 is 224x224 with 3 channels.Preprocessing layer for input of MobileNet V3 is a placeholder.Next,the input of the MobileNet V3 is a float tensor with a pixel in the range of [0-255].All the weight parameter will not updated during the training process also known as freezing all layers in pre-trained model.Apart from that,abundant dataset was provided the dropping rate of drop layer in MobileNet V3 will be increase to 0.3.
+The rules of image shape in MobileNet V3 is 224x224 with 3 channels.Preprocessing layer for input of MobileNet V3 is a placeholder.Next,the input of the MobileNet V3 is a float tensor with a pixel in the range of [0-255].All the weight parameter will not updated during the training process also known as freezing all layers in pre-trained model.Apart from that,abundant dataset was provided the dropping rate of drop layer in MobileNet V3 will be increase to 0.3 to prevent overfitting.
 
 
 Lastly, the global average pooling and dropout layer were implemented to vectorize the feature map and to prevent overfitting.Then,the signal will be fed into the output softmax regression layer to classify the images.
