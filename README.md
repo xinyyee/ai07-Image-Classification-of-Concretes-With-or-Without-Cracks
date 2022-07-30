@@ -12,12 +12,12 @@ Juypter notebook is the main IDE.The main frameworks used in this project are Nu
 ## 3. Methodology
 Transfer Learning will be the main methodology in this project.The model was pre-trained from large dataset typically for classification task.The pre-trained model can be applied to a specific given task.For more detail please refer to this official [documentation](https://www.tensorflow.org/tutorials/images/transfer_learning). 
 
-# 3.1 Data Pipeline
+### 3.1 Data Pipeline
 <p align="justify"> 
 Data annotation of concrete dataset was loaded.Firstly, data was split into train-validation-test set with a ratio images of 28000:9600:2400.Besides,the dimension of all images in the dataset were reshaped snd color channel was converted to 224x224 with a RGB channels(224,224,3).Next abundant dataset was given, data agumentation will not be applied in this project.</p>
 
 
-# 3.2 Model
+### 3.2 Model
 <p align="justify"> 
 Pre-trained model of feature extractor MobileNet V3 small was chosen in this project due to the huge dataset provided.Hence small architecture of MobileNet was selected to reduce the training time.</p>
 
