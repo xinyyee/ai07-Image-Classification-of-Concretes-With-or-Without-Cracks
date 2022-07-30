@@ -1,4 +1,4 @@
-# ai07 Image Classification of Concretes With or Without Cracks using Convolutional Neural Network
+# Image Classification of Concretes With or Without Cracks using Convolutional Neural Network
  
 ## 1. Objective
 The objective is to construct a convolutional neural network that able to classify the images dataset of concretes with or without the crack.Dataset is divided into two category such as negative(without crack) and positive(with crack).Besides,each category will provide 20000 images.
