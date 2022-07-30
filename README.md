@@ -7,7 +7,7 @@ The objective is to construct a convolutional neural network that able to classi
 [Concrete dataset](https://data.mendeley.com/datasets/5y9wdsg2zt/2) this link will provide the dataset.
 
 ## 2. IDE and Framework
-Juypter notebook is the main IDE.The main frameworks used in this project are Numpy,Tensorflow Keras and Matplotlib.
+Google Colab is the main IDE.The main frameworks used in this project are Numpy,Tensorflow Keras and Matplotlib.
 
 ## 3. Methodology
 Transfer Learning will be the main methodology in this project.The model was pre-trained from large dataset typically for classification task.The pre-trained model can be applied to a specific given task.For more detail please refer to this official [documentation](https://www.tensorflow.org/tutorials/images/transfer_learning). 
